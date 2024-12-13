@@ -23,7 +23,7 @@ export const GlobalProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   const fetchTrafficData = async (point: string) => {
     try {
       const response = await fetch(
-        `https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?key=uzgvbHzetyo052qiesC664lm8QHD12AT&point=${point}`
+        `https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json?key=uzgvbHesC664lm8QHD12AT&point=${point}`
       );
       const data = await response.json();
       console.log('Traffic Data:', data); // Imprime los datos para inspeccionar
